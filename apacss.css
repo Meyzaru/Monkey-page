@@ -1,0 +1,114 @@
+/* stilen på sidan */
+body {
+  background-color: #fefae0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin: 20px 0;
+  color: #555;
+  word-spacing: 0cm;
+  row-gap: 0cm;
+  font-family: sans-serif;
+}
+
+/* Rubriken */
+h1 {
+  margin-top: 40px;
+  font-size: 3rem;
+  color: rgba(138, 75, 23, 0.993);
+}
+
+/* bild placering */
+.apa {
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Bild effekt */
+.apa img{
+  place-items: center;   
+  width: 800px;
+  max-width: 80%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+/* hover-effekt */
+.apa img:hover {
+  transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+.apa p:hover{
+    transform: scale(1.05);
+}
+h1:hover{
+  color: aqua;
+  transform: scale(1.05);
+}
+
+/* Men apa smart också */
+.apa p {
+  margin-top: 15px;
+  font-size: 1.5rem;
+  color: #be642f;
+}
+
+.sadface{
+  text-align: center;
+  margin: 30px;
+}
+
+.sadface img {
+  width: 500px;
+  max-width: 90%;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.sadface img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.westafrica , .eastafrica {
+  display: flex;
+  align-items: center;
+  margin: 30px auto;
+  max-width: 900px;
+  gap: 20px;
+  font-family: sans-serif;
+}
+
+.westafrica img, .eastafrica img {
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+.westafrica img:hover, .eastafrica img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+.westafrica h2, .eastafrica h2 {
+  font-size: 1.8rem;
+  color: #be642f;
+}
+.westafrica {
+  justify-content: flex-start;
+  text-align: left;
+}
+.eastafrica {
+  justify-content: flex-end;
+  text-align: right;
+  flex-direction: row-reverse;
+}
